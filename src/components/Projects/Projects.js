@@ -8,6 +8,12 @@ import podify from "../../Assets/Projects/podify.png";
 import voting from "../../Assets/Projects/voting.png";
 import Todo from "../../Assets/Projects/Todo.png";
 import Gita from "../../Assets/Projects/Gita.png";
+import book from "../../Assets/Projects/book.png";
+import socket from "../../Assets/Projects/socket.jpg";
+import roots from "../../Assets/Projects/roots.png";
+import freds from "../../Assets/Projects/freds.jpeg";
+import plate from "../../Assets/Projects/plate.jpg";
+import quest from "../../Assets/Projects/quest.png";
 
 function Projects() {
   return (
@@ -56,6 +62,50 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={freds}
+              isBlog={false}
+              title="FREDS"
+              description="FREDS is a decentralized social media project prioritizing user privacy and global expression."
+               ghLink="https://github.com/niladri2002/FREDS"
+              demoLink="https://youtu.be/PEVLJlpf_3M"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={book}
+              isBlog={false}
+              title="Personal BookShelf"
+              description="Personal Bookshelf is a React web app that enables users to search for books using the Open Library API, efficiently handling API requests with debouncing. Users can save their favorite books to a personal bookshelf stored persistently using localStorage."
+              ghLink="https://github.com/niladri2002/Personal-Bookshelf"
+              demoLink="https://niladri2002-personal-bookshelf.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={socket}
+              isBlog={false}
+              title="SocketPilot"
+              description="SocketPilot is a remote access tool using socket programming. Features include checking files, changing directories, and opening files on connected systems. User-friendly interface ensures smooth remote operations."
+              ghLink="https://github.com/niladri2002/SocketPilot"
+              demoLink="https://github.com/niladri2002/SocketPilot"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={roots}
+              isBlog={false}
+              title="RuralRoots"
+              description="RuralRoots is an online village shop platform facilitating direct sales between sellers and customers, with a feature allowing customers to contact sellers directly via email."
+               ghLink="https://github.com/niladri2002/RuralRoots"
+              demoLink="https://github.com/niladri2002/RuralRoots"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Tetris}
               isBlog={false}
               title="TETRIS"
@@ -77,6 +127,29 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={quest}
+              isBlog={false}
+              title="QuestCraft"
+              description="QuestCraft is a cutting-edge Question Paper Generator designed to streamline the process of creating customized question papers."
+                 ghLink="https://github.com/niladri2002/QuestCraft"
+              demoLink="https://github.com/niladri2002/QuestCraft"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={plate}
+              isBlog={false}
+              title="PlateWatch"
+              description="PlateWatch is a Automated Number Plate Recognition for Enhanced Traffic Management"
+                ghLink="https://github.com/niladri2002/PlateWatch"
+              demoLink="https://github.com/niladri2002/PlateWatch"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Todo}
               isBlog={false}
               title="TODO-LIST"
@@ -85,6 +158,8 @@ function Projects() {
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
+
+          
         </Row>
       </Container>
     </Container>
